@@ -12,12 +12,12 @@
 
 ### Finally TestSubjectData and TrainSubjectData were row binded to get one consolidated data frame SubjectActivityData having 10299 rows and 1715 variables.
 
-### Then to keep only mean and standard deviation measurements a grep was performed on colnames for mean and std and indices of the column names which contain mean / std in their column names were derived and via subsetting of data frame the rest of the columns were dropped and a new resulting data frame SubjectMeanSDActivityData was created which contained 10299 observations and 81 variables. 
+### Then to keep only mean and standard deviation measurements a grep was performed on colnames character vector for mean and std and indices of the column names which contain mean / std in their column names were derived and via subsetting of data frame the rest of the columns were dropped and a new resulting data frame SubjectMeanSDActivityData was created which contained 10299 observations and 81 variables. 
 
-### We then merged if with activity data and added Activity name informatino via a lookup to get SubjectMeanSDActivityNameData data frame having 10299 observations and 82 variables.
+### We then merged it with activity data and added Activity name information via a lookup to get SubjectMeanSDActivityNameData data frame having 10299 observations and 82 variables.
 
-### Then meaningful coumn names were created by gsub function to replace mean by Mean, std by SD, removing . from column names, replacing Acc by Acceleration, BodyBody by Body, Gyro by Angular velocity.
+### Then meaningful column names were created by gsub function to replace mean by Mean, std by SD, removing . from column names, replacing Acc by Acceleration, BodyBody by Body, Gyro by Angular velocity.
 
 ### Then the data set was melted with ActivityId, ActivityName and SubjectId as id variables and the rest of 79 variables as measures.
 
-### Finally dcast was performed to get the required data frame ActSubjSmry containing mean values of all the 79 variables for all the identified Activities and all the subjects which was then exported to a text file using write.table().
+### Finally dcast was performed to get the required data frame ActSubjSmry containing mean values of all the 79 variables for all the identified Activities and all the subjects thus resulting in 6 rows for each of the 30 subjects and hence a total of 180 rows. This was then exported to a text file using write.table().
