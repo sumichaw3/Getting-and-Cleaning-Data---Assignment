@@ -65,7 +65,7 @@
 ### tBodyAngularVelocityMean
 ### tBodyAngularVelocityJerkMean
 
-### These mean (Mean) and standard deviation (SD) values for the inertial signals derived as per the details mentioned above have then been picked and further averaged for all the samples for a particular acitivty and a particular subject to result in just one mean value for each activity and each subject. All the values are real numbers.  
+### These mean (Mean) and standard deviation (SD) values for the inertial signals derived as per the details mentioned above have then been picked and further averaged for all the samples for a particular acitivty and a particular subject to result in just one mean value for each activity and each subject. All the values are real numbers and units for acceleation variables is same as gravitation acceleration i.e. meters per second square and that for angular velocity is radians per second.  
  
 ### 4	tBodyAcclerationMeanX: real number 
 ### 5	tBodyAcclerationMeanY: real number
